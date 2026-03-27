@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Krishna | Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    
+  <h2 class="logo">Krishna</h2>
+
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="icons">
+    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-container">
+
+    <div class="hero-text" data-aos="fade-right">
+      <h1>Hello, I'm Krishna</h1>
+      <h2>I am <span id="typing"></span></h2>
+      
+
+      <button onclick="scrollToSection('projects')">View Projects</button>
+
+      <br><br>
+
+      <a href="./assets/Krishna_resume.pdf" download>
+        <button class="resume-btn">Download Resume</button>
+      </a>
+    </div>
+
+    <div class="hero-image" data-aos="fade-left">
+      <img src="./assets/ChatGPT Image Mar 25, 2026, 08_48_23 AM.png" alt="Profile Photo">
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>I am a dedicated and self-driven Computer Science student with a strong foundation in Java and object-oriented programming. I have developed projects in blockchain and web technologies, focusing on solving real-world problems.
+
+I am passionate about learning new technologies, writing clean code, and building scalable applications. My goal is to grow into a skilled software developer and contribute to innovative solutions.
+
+</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" data-aos="fade-up">
+  <h2>Skills</h2>
+
+  <div class="skills-container">
+
+    <span><i class="fab fa-java"></i> Java</span>
+    <span><i class="fab fa-html5"></i> HTML</span>
+    <span><i class="fab fa-css3-alt"></i> CSS</span>
+    <span><i class="fab fa-js"></i> JavaScript</span>
+
+    <span><i class="fas fa-link"></i> Blockchain</span>
+    <span><i class="fas fa-cloud"></i> Cloud</span>
+
+    <span><i class="fab fa-github"></i> GitHub</span>
+    <span><i class="fas fa-database"></i> MongoDB</span>
+
+  </div>
+</section>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 data-aos="fade-up">Projects</h2>
+
+  <div class="project-card" data-aos="zoom-in">
+    <h3> Organic Food Supply Chain Traceability using Blockchain Technology</h3>
+    <p> Developed a Python-based blockchain system for secure and immutable data management.Tracked and verified organic food supply from production to delivery. Ensured transparency, traceability, and data security across the supply chain.</p>
+    
+
+    <div class="project-buttons">
+      <a href="#"><i class="fas fa-globe"></i> Live</a>
+      <a href="#"><i class="fab fa-github"></i> Code</a>
+    </div>
+  </div>
+
+  <div class="project-card" data-aos="zoom-in">
+    <h3>Arduino-Based Solar Tracking System</h3>
+    <p>ADesigned an automated solar tracking system using Arduino and LDR sensors.Implemented servo motor control to dynamically adjust panel position.Improved solar energy generation efficiency through real-time sunlight tracking.</p>
+
+    <div class="project-buttons">
+      <a href="#"><i class="fas fa-globe"></i> Live</a>
+      <a href="#"><i class="fab fa-github"></i> Code</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" data-aos="fade-up">
+  <h2>Contact Me</h2>
+
+  <div class="contact-info">
+    <p><i class="fas fa-phone"></i> +91 7483820415</p>
+    <p><i class="fas fa-envelope"></i> krishnau690@gmail.com</p>
+  </div>
+
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Krishna | All Rights Reserved</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</body>
+</html>
